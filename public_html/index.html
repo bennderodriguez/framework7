@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="theme-color" content="#2196f3">
+        <title>RockJS Framework</title>
+        <link rel="stylesheet" href="asset/packages/core/css/framework7.min.css">
+        <link rel="stylesheet" href="asset/css/app.css">
+        <link rel="stylesheet" href="asset/css/rockjs.css">
+        <link rel="icon" href="asset/img/favicon.ico">
+    </head>
+    <body>
+        <div id="app">
+            <div class="view view-main view-init ios-edges" data-url="/">
+                <div class="page no-toolbar no-navbar no-swipeback">
+                    <div class="page-content login-screen-content">
+
+                        <div class="login-screen-title">RockJS Framework</div>
+                        <div class="login-screen-title"><img src="asset/img/sniglet.png" width="12%" alt="RockJS Framework"></div>
+                        <div id="login-form">
+                            <form>
+                                <div class="list">
+                                    <ul>
+                                        <li class="item-content item-input item-input-with-value">
+                                            <div class="item-inner">
+                                                <div class="item-title item-label">Username</div>
+                                                <div class="item-input-wrap">
+                                                    <input type="text" placeholder="Usuario" id="demo-username-2" class="input-with-value">
+                                                    <span class="input-clear-button"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content item-input">
+                                            <div class="item-inner">
+                                                <div class="item-title item-label">Password</div>
+                                                <div class="item-input-wrap">
+                                                    <input type="password" placeholder="Password" id="demo-password-2" class="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <a href="/tablero/" class="button button-raised button-fill" @click="signIn">Entrar</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="asset/js/validator.min.js"></script>
+        <script src="asset/js/rocks.js"></script>
+
+        <script src="asset/packages/core/js/framework7.min.js"></script>
+        <script src="asset/js/routes.js"></script>
+        <script src="asset/js/app.js"></script>
+
+
+    </body>
+</html>

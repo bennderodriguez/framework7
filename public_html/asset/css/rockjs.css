@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8/10/2018, 12:35:14 PM
+    Author     : Admin
+*/
+
+.login-screen-content {
+    background-image: url("../img/1.jpg");
+}
+
+.ios .login-screen-content .block, .ios .login-screen-content .list, .ios .login-screen-content .login-screen-title {
+    margin: 25px auto;
+    color: white;
+}
+
+#login-form{
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.7;
+    filter: alpha(opacity=80);  
+}
+
+#cfos {
+    background-color: #005689 !important;
+   
+    
+}
+
+.navbar{
+    background-color: #005689 !important;
+    color: white;
+}
+
+.navbar  a{
+    color: white !important;
+}
+
+.ios a {
+    color: white;
+}

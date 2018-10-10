@@ -1,0 +1,247 @@
+<template>
+    <div class="page">
+        <div class="statusbar"></div>
+        <div class="panel panel-left panel-cover">
+            <div class="page">
+                <div class="page-content">
+                    <div class="list links-list" id="cfos">
+                        <ul>
+                            <li>
+                                <a href="/compras/" class="panel-close">Compras</a>
+                            </li>
+                            <li>
+                                <a href="/orders/" class="panel-close">Ordenes de Compra</a>
+                            </li>
+                            <li>
+                                <a href="/reportes/" class="panel-close">Reportes</a>
+                            </li>
+                             <li>
+                                <a href="/contacts-list/" class="panel-close">Lista de contactos</a>
+                            </li>
+                            <li>
+                                <a href="/ajustes/" class="panel-close">Ajustes</a>
+                            </li>
+                            <li>
+                                <a href="/accordion/" class="panel-close">Accordion</a>
+                            </li>
+                            <li>
+                                <a href="/action-sheet/" class="panel-close">Action Sheet</a>
+                            </li>
+                            <li>
+                                <a href="/badge/" class="panel-close">Badge</a>
+                            </li>
+                            <li>
+                                <a href="/buttons/" class="panel-close">Buttons</a>
+                            </li>
+                            <li>
+                                <a href="/cards/" class="panel-close">Cards</a>
+                            </li>
+                            <li>
+                                <a href="/checkbox/" class="panel-close">Checkbox</a>
+                            </li>
+                            <li>
+                                <a href="/chips/" class="panel-close">Chips/Tags</a>
+                            </li>
+                            <li>
+                                <a href="/data-table/" class="panel-close">Data Table</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only panel-open" data-panel="left">
+                        <i class="icon f7-icons ios-only">menu</i>
+                        <i class="icon material-icons md-only">menu</i>
+                    </a>
+                </div>
+                <div class="title sliding">RockJS Framework</div>
+                <div class="right">
+                    <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
+                        <i class="icon f7-icons ios-only">search_strong</i>
+                        <i class="icon material-icons md-only">search</i>
+                    </a>
+                </div>
+                <form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components searchbar-init">
+                    <div class="searchbar-inner">
+                        <div class="searchbar-input-wrap">
+                            <input type="search" placeholder="Search components"/>
+                            <i class="searchbar-icon"></i>
+                            <span class="input-clear-button"></span>
+                        </div>
+                        <span class="searchbar-disable-button">Cancel</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="block block-strong text-align-center">
+                <div class="gauge demo-gauge"></div>
+                <p class="segmented segmented-raised">
+                    <a href="#" class="button" @click="setGaugeValue(0)">0%</a>
+                    <a href="#" class="button" @click="setGaugeValue(25)">25%</a>
+                    <a href="#" class="button" @click="setGaugeValue(50)">50%</a>
+                    <a href="#" class="button" @click="setGaugeValue(75)">75%</a>
+                    <a href="#" class="button" @click="setGaugeValue(100)">100%</a>
+                </p>
+            </div>
+            <div class="block-title">Circle Gauges</div>
+            <div class="block block-strong">
+                <div class="row">
+                    <div class="col text-align-center">
+                        <div
+                            class="gauge gauge-init"
+                            data-type="circle"
+                            data-value="0.44"
+                            data-value-text="44%"
+                            data-value-text-color="#ff9800"
+                            data-border-color="#ff9800"
+                            ></div>
+                    </div>
+                    <div class="col text-align-center">
+                        <div
+                            class="gauge gauge-init"
+                            data-type="circle"
+                            data-value="0.12"
+                            data-value-text="$120"
+                            data-value-text-color="#4caf50"
+                            data-border-color="#4caf50"
+                            data-label-text="of $1000 budget"
+                            data-label-text-color="#f44336"
+                            data-label-font-weight="700"
+                            ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-title">Semicircle Gauges</div>
+            <div class="block block-strong">
+                <div class="row">
+                    <div class="col text-align-center">
+                        <div
+                            class="gauge gauge-init"
+                            data-type="semicircle"
+                            data-value="0.3"
+                            data-value-text="30%"
+                            data-value-text-color="#f44336"
+                            data-border-color="#f44336"
+                            ></div>
+                    </div>
+                    <div class="col text-align-center">
+                        <div
+                            class="gauge gauge-init"
+                            data-type="semicircle"
+                            data-value="0.5"
+                            data-value-text="30kg"
+                            data-value-text-color="#e91e63"
+                            data-border-color="#e91e63"
+                            data-label-text="of 60kg total"
+                            data-label-text-color="#333"
+                            ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-title">Customization</div>
+            <div class="block block-strong">
+                <div class="row">
+                    <div class="col text-align-center">
+                        <div
+                            class="gauge gauge-init"
+                            data-type="circle"
+                            data-value="0.35"
+                            data-value-text="35%"
+                            data-value-text-color="#4caf50"
+                            data-value-font-size="51"
+                            data-value-font-weight="700"
+                            data-border-width="20"
+                            data-border-color="#4caf50"
+                            data-border-bg-color="#ffeb3b"
+                            data-bg-color="#ffeb3b"
+                            ></div>
+                    </div>
+                    <div class="col text-align-center">
+                        <div
+                            class="gauge gauge-init"
+                            data-type="circle"
+                            data-value="0.67"
+                            data-value-text="$670"
+                            data-value-text-color="#000"
+                            data-border-color="#ff9800"
+                            data-label-text="of $1000 spent"
+                            data-label-text-color="#4caf50"
+                            data-label-font-weight="800"
+                            data-label-font-size="12"
+                            data-border-width="30"
+                            ></div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col text-align-center">
+                        <div
+                            class="gauge gauge-init"
+                            data-type="semicircle"
+                            data-value="0.5"
+                            data-value-text="50%"
+                            data-value-text-color="#ffeb3b"
+                            data-value-font-size="41"
+                            data-value-font-weight="700"
+                            data-border-width="10"
+                            data-border-color="#ffeb3b"
+                            data-border-bg-color="transparent"
+                            ></div>
+                    </div>
+                    <div class="col text-align-center">
+                        <div
+                            class="gauge gauge-init"
+                            data-type="semicircle"
+                            data-value="0.77"
+                            data-border-color="#ff9800"
+                            data-label-text="$770 spent so far"
+                            data-label-text-color="#ff9800"
+                            data-label-font-weight="800"
+                            data-label-font-size="12"
+                            data-border-width="10"
+                            ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<script>
+    return {
+    methods: {
+    setGaugeValue: function(value) {
+    var self = this;
+    self.demoGauge.update({
+    value: value / 100,
+            valueText: value + '%',
+    });
+    },
+    },
+            on: {
+            pageInit: function (e, page) {
+            var self = this;
+            var app = self.$app;
+            self.demoGauge = app.gauge.create({
+            el: '.demo-gauge',
+                    type: 'circle',
+                    value: 0.5,
+                    size: 250,
+                    borderColor: '#2196f3',
+                    borderWidth: 10,
+                    valueText: '50%',
+                    valueFontSize: 41,
+                    valueTextColor: '#2196f3',
+                    labelText: 'amount of something',
+            });
+            },
+                    pageBeforeRemove: function (e, page) {
+                    if (this.demoGauge) this.demoGauge.destroy();
+                    },
+            }
+    }
+</script>

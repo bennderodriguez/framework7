@@ -1,0 +1,70 @@
+<div class="page">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title">Nueva orden de compra</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form role="form" id="contactForm" data-toggle="validator" class="list">
+            <ul>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Name</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">E-mail</div>
+                            <div class="item-input-wrap">
+                                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Gender</div>
+                            <div class="item-input-wrap">
+                                <select name="gender" id="gender">
+                                    <option value="male" selected>Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">Toggle</div>
+                            <div class="item-after">
+                                <label class="toggle toggle-init">
+                                    <input type="checkbox" name="toggle" id="toggle" value="yes"><i class="toggle-icon"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="block block-strong row">
+                <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+            </div>
+        </form>
+
+    </div>
+</div>
